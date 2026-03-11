@@ -1,0 +1,195 @@
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:'Saira',sans-serif;
+  background:#fce7f3;
+  color:#4a2c3a;
+  overflow-x:hidden;
+}
+
+/* particles */
+#particles{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:18px 40px;
+  background:white;
+  z-index:10;
+}
+
+.nav-links{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.nav-links a,
+.resume-btn{
+  padding:8px 16px;
+  border-radius:999px;
+  text-decoration:none;
+  color:#d63384;
+  font-weight:600;
+  transition:.25s;
+}
+
+.nav-links a:hover,
+.resume-btn:hover{
+  background:#d63384;
+  color:white;
+}
+
+#darkToggle{
+  border:none;
+  background:none;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 10%;
+}
+
+.name{
+  font-size:4rem;
+  color:#d63384;
+}
+
+.subtitle{
+  font-size:1.3rem;
+  margin:12px 0 20px;
+}
+
+/* skills pills */
+.skills{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.skills span{
+  padding:6px 14px;
+  border-radius:999px;
+  background:rgba(214,51,132,0.15);
+  border:1px solid rgba(214,51,132,0.4);
+}
+
+/* flower container */
+#flower-container{
+  width:400px;
+  height:400px;
+}
+
+/* ABOUT */
+.about{
+  display:flex;
+  gap:80px;
+  padding:140px 12%;
+}
+
+.about-right{
+  margin-left:60px;
+}
+
+/* animated title */
+.about-title{
+  font-size:3rem;
+  opacity:0;
+  transform:translateX(-60px);
+  transition:1s;
+}
+.about-title.show{
+  opacity:1;
+  transform:none;
+}
+
+/* transparent pills */
+.about-pill{
+  background:rgba(255,255,255,0.35);
+  backdrop-filter:blur(12px);
+  padding:20px;
+  border-radius:20px;
+  margin-bottom:20px;
+}
+
+/* PROJECTS */
+.projects{
+  padding:120px 12%;
+}
+
+.project-grid{
+  display:flex;
+  gap:25px;
+}
+
+.card{
+  background:rgba(255,255,255,0.35);
+  backdrop-filter:blur(10px);
+  padding:25px;
+  border-radius:15px;
+}
+
+/* CONNECT */
+.contact{
+  padding:120px 12%;
+}
+
+.connect-grid{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.connect-btn{
+  padding:12px 22px;
+  border-radius:12px;
+  background:#d63384;
+  color:white;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+/* fade animation */
+.fade{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.fade.show{
+  opacity:1;
+  transform:none;
+}
+
+/* footer */
+.footer{
+  text-align:center;
+  padding:30px 0;
+  opacity:0.6;
+}
+
+/* dark mode */
+.dark{
+  background:#121212;
+  color:white;
+}
+.dark nav{ background:#1b1b1b; }
+.dark .card{ background:#222; }
